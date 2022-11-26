@@ -129,6 +129,17 @@ namespace GameEngine.Tests {
             Assert.PropertyChanged(sut, "Health", () => sut.TakeDamage(10));
         }
 
+        [Theory]
+        [InlineData(0, 100)]
+        [InlineData(1, 99)]
+        [InlineData(50, 50)]
+        [InlineData(101, 1)] // always gives 1
+        public void TakeDamage(int damage, int expectedHealth)
+        {
+            sut.TakeDamage(damage);
+            Assert.Equal(expectedHealth, sut.Health);
+        }
+
         public void Dispose()
         {
             _output.WriteLine($"Disposing Player Character {sut.FullName}");
