@@ -1,0 +1,341 @@
+{
+  "GameEngine.dll": {
+    "/Users/mac/CodesPractice/Testing/UnitTest/x-unit-dotnetcore-pluralsight/02/demos/before/01AddingTestProject/GameEngine/BossEnemy.cs": {
+      "GameEngine.BossEnemy": {
+        "System.Double GameEngine.BossEnemy::get_TotalSpecialPower()": {
+          "Lines": {
+            "5": 1
+          },
+          "Branches": []
+        },
+        "System.Double GameEngine.BossEnemy::get_SpecialPowerUses()": {
+          "Lines": {
+            "6": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/mac/CodesPractice/Testing/UnitTest/x-unit-dotnetcore-pluralsight/02/demos/before/01AddingTestProject/GameEngine/Enemy.cs": {
+      "GameEngine.Enemy": {
+        "System.String GameEngine.Enemy::get_Name()": {
+          "Lines": {
+            "5": 8
+          },
+          "Branches": []
+        },
+        "System.Double GameEngine.Enemy::get_TotalSpecialAttackPower()": {
+          "Lines": {
+            "8": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/mac/CodesPractice/Testing/UnitTest/x-unit-dotnetcore-pluralsight/02/demos/before/01AddingTestProject/GameEngine/EnemyCreationException.cs": {
+      "GameEngine.EnemyCreationException": {
+        "System.String GameEngine.EnemyCreationException::get_RequestedEnemyName()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Void GameEngine.EnemyCreationException::.ctor(System.String,System.String)": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/mac/CodesPractice/Testing/UnitTest/x-unit-dotnetcore-pluralsight/02/demos/before/01AddingTestProject/GameEngine/EnemyFactory.cs": {
+      "GameEngine.EnemyFactory": {
+        "GameEngine.Enemy GameEngine.EnemyFactory::Create(System.String,System.Boolean)": {
+          "Lines": {
+            "8": 7,
+            "9": 7,
+            "10": 0,
+            "11": 0,
+            "14": 7,
+            "15": 2,
+            "16": 2,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "23": 2,
+            "26": 5,
+            "27": 7
+          },
+          "Branches": [
+            {
+              "Line": 9,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 9,
+              "Offset": 7,
+              "EndOffset": 21,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            },
+            {
+              "Line": 14,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 16,
+              "Offset": 39,
+              "EndOffset": 41,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 39,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            },
+            {
+              "Line": 14,
+              "Offset": 24,
+              "EndOffset": 76,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 5
+            }
+          ]
+        },
+        "System.Boolean GameEngine.EnemyFactory::IsValidBossName(System.String)": {
+          "Lines": {
+            "29": 2,
+            "30": 2
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 11,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "/Users/mac/CodesPractice/Testing/UnitTest/x-unit-dotnetcore-pluralsight/02/demos/before/01AddingTestProject/GameEngine/NormalEnemy.cs": {
+      "GameEngine.NormalEnemy": {
+        "System.Double GameEngine.NormalEnemy::get_TotalSpecialPower()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Double GameEngine.NormalEnemy::get_SpecialPowerUses()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/mac/CodesPractice/Testing/UnitTest/x-unit-dotnetcore-pluralsight/02/demos/before/01AddingTestProject/GameEngine/PlayerCharacter.cs": {
+      "GameEngine.PlayerCharacter": {
+        "System.String GameEngine.PlayerCharacter::get_FirstName()": {
+          "Lines": {
+            "12": 17
+          },
+          "Branches": []
+        },
+        "System.String GameEngine.PlayerCharacter::get_LastName()": {
+          "Lines": {
+            "13": 6
+          },
+          "Branches": []
+        },
+        "System.String GameEngine.PlayerCharacter::get_FullName()": {
+          "Lines": {
+            "14": 5
+          },
+          "Branches": []
+        },
+        "System.String GameEngine.PlayerCharacter::get_Nickname()": {
+          "Lines": {
+            "15": 1
+          },
+          "Branches": []
+        },
+        "System.Int32 GameEngine.PlayerCharacter::get_Health()": {
+          "Lines": {
+            "18": 4
+          },
+          "Branches": []
+        },
+        "System.Void GameEngine.PlayerCharacter::set_Health(System.Int32)": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1
+          },
+          "Branches": []
+        },
+        "System.Boolean GameEngine.PlayerCharacter::get_IsNoob()": {
+          "Lines": {
+            "25": 12
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.String> GameEngine.PlayerCharacter::get_Weapons()": {
+          "Lines": {
+            "26": 16
+          },
+          "Branches": []
+        },
+        "System.Void GameEngine.PlayerCharacter::Sleep()": {
+          "Lines": {
+            "40": 1,
+            "41": 1,
+            "43": 1,
+            "45": 1,
+            "46": 1
+          },
+          "Branches": []
+        },
+        "System.Int32 GameEngine.PlayerCharacter::CalculateHealthIncrease()": {
+          "Lines": {
+            "49": 1,
+            "50": 1,
+            "52": 1,
+            "53": 1
+          },
+          "Branches": []
+        },
+        "System.Void GameEngine.PlayerCharacter::OnPlayerSlept(System.EventArgs)": {
+          "Lines": {
+            "57": 1,
+            "58": 1,
+            "59": 1
+          },
+          "Branches": [
+            {
+              "Line": 58,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 58,
+              "Offset": 8,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void GameEngine.PlayerCharacter::TakeDamage(System.Int32)": {
+          "Lines": {
+            "62": 0,
+            "63": 0,
+            "64": 0
+          },
+          "Branches": []
+        },
+        "System.String GameEngine.PlayerCharacter::GenerateRandomFirstName()": {
+          "Lines": {
+            "67": 11,
+            "68": 11,
+            "69": 11,
+            "70": 11,
+            "71": 11,
+            "72": 11,
+            "73": 11,
+            "74": 11,
+            "75": 11,
+            "77": 11,
+            "78": 11,
+            "79": 11
+          },
+          "Branches": []
+        },
+        "System.Void GameEngine.PlayerCharacter::CreateStartingWeapons()": {
+          "Lines": {
+            "82": 11,
+            "83": 11,
+            "84": 11,
+            "85": 11,
+            "86": 11,
+            "87": 11,
+            "88": 11,
+            "89": 11
+          },
+          "Branches": []
+        },
+        "System.Void GameEngine.PlayerCharacter::OnPropertyChanged(System.String)": {
+          "Lines": {
+            "94": 1,
+            "95": 1,
+            "96": 1
+          },
+          "Branches": [
+            {
+              "Line": 95,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 95,
+              "Offset": 8,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void GameEngine.PlayerCharacter::.ctor()": {
+          "Lines": {
+            "10": 11,
+            "30": 11,
+            "31": 11,
+            "32": 11,
+            "34": 11,
+            "36": 11,
+            "37": 11
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
