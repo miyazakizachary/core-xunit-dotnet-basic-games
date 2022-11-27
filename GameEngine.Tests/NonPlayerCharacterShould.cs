@@ -45,9 +45,28 @@ namespace GameEngine.Tests
             Assert.Equal(expectedHealth, sut.Health);
         }
 
+        // using custom data attributes
+        [Theory]
+        [TestDamageHealthAttributeData]
+        public void TakeDamageAttribute(int damage, int expectedHealth)
+        {
+            sut.TakeDamage(damage);
+            Assert.Equal(expectedHealth, sut.Health);
+        }
+
+        // using custom data attributes with external file
+        [Theory]
+        [TestDamageHealthFileAttribute]
+        public void TakeDamageAttributeExternalFile(int damage, int expectedHealth)
+        {
+            sut.TakeDamage(damage);
+            Assert.Equal(expectedHealth, sut.Health);
+        }
+
 
         public void Dispose()
         {
+            
         }
     }
 }
