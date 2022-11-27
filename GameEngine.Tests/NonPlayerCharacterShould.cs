@@ -1,7 +1,6 @@
 using System;
 using Xunit;
 using Xunit.Abstractions;
-using GameEngine;
 
 namespace GameEngine.Tests
 {
@@ -18,19 +17,37 @@ namespace GameEngine.Tests
 
 
         [Theory]
-        [InlineData(0, 100)]
-        [InlineData(1, 99)]
-        [InlineData(50, 50)]
-        [InlineData(101, 1)] // always gives 1
+        // MemberData("property name", MemberType = typeof(class name))
+        [MemberData("TestDataYield", MemberType = typeof(TestDamageHealthData))]
         public void TakeDamage(int damage, int expectedHealth)
         {
             sut.TakeDamage(damage);
             Assert.Equal(expectedHealth, sut.Health);
         }
 
+        // the following technique, we could get compiler checking rather than runtime checking
+        [Theory]
+        // MemberData("property name", MemberType = typeof(class name))
+        [MemberData(nameof(TestDamageHealthData.TestDataYield), MemberType = typeof(TestDamageHealthData))]
+        public void TakeDamage2(int damage, int expectedHealth)
+        {
+            sut.TakeDamage(damage);
+            Assert.Equal(expectedHealth, sut.Health);
+        }
+
+        // external data bridging from class
+         [Theory]
+        // MemberData("property name", MemberType = typeof(class name))
+        [MemberData(nameof(TestDamageHealthExternalData.TestData), MemberType = typeof(TestDamageHealthExternalData))]
+        public void TakeDamageExternal(int damage, int expectedHealth)
+        {
+            sut.TakeDamage(damage);
+            Assert.Equal(expectedHealth, sut.Health);
+        }
+
+
         public void Dispose()
         {
-            throw new NotImplementedException();
         }
     }
 }
